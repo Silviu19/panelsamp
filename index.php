@@ -18,19 +18,35 @@
             $pagina_titlu = "Pagina principala";
 
             afiseaza_template("acasa");
+
+            break;
         }
         case "afisare":
         {
             if(!isset($_SESSION['este_logat']))
-            {
                 echo "Nu esti logat";
-            }
             else {
                 $pagina = "afisare";
                 $pagina_titlu = "Pagina protejata";
 
                 afiseaza_template("afisare");
             }
+
+            break;
+        }
+        case "resetareparola":
+        {
+            if(isset($_SESSION['este_logat']))
+                echo "Esti logat, nu poti sa iti resetezi parola!";
+            else
+            {
+                $pagina = "resetareparola";
+                $pagina_titlu = "Resetarea parolei";
+
+                afiseaza_template("resetareparola");
+            }
+
+            break;
         }
         default:
         {

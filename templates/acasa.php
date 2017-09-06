@@ -38,7 +38,14 @@
 
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="index.php?pagina=resetareparola" class="btn btn-default">Am uitat parola!</a>
+            </div>
+        </div>
         <!-- /.row -->
     </div>
     <!-- /.container-fluid -->
 
+</div>
